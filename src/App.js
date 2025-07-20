@@ -6,7 +6,9 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Companies from "./components/Companies"
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -26,17 +28,23 @@ function App() {
       <div id="about">
         <About />
       </div>
-      <div id="services">
-        <Services />
-      </div>
       <div id="skills">
         <Skills />
       </div>
       <div id="projects">
         <Projects />
       </div>
+      <div id="companies">
+        <Companies />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
       <div id="contact">
         <Contact />
+      </div>
+      <div id="footer">
+        <Footer />
       </div>
     </div>
   );

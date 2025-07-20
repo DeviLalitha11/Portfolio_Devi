@@ -3,19 +3,34 @@ import { motion } from "framer-motion";
 const Services = () => {
     const services = [
         {
-            title: "MERN Stack Development",
-            description: "Developing robust and scalable web applications using React, Node.js, and MongoDB.",
+            title: "Web Development",
+            description: "Building scalable web applications with React, Node.js, and MongoDB.",
             icon: "💻",
         },
         {
+            title: "App Development",
+            description: "Creating cross-platform mobile apps with Flutter.",
+            icon: "📱",
+        },
+        {
             title: "Data Science",
-            description: "Analyzing complex datasets and creating insightful visualizations using Python and Tableau.",
+            description: "Analyzing data & building models with Python, Pandas, and Tableau.",
             icon: "📊",
         },
         {
-            title: "Web Design",
-            description: "Designing responsive and visually appealing websites using HTML, CSS, and Tailwind CSS.",
-            icon: "🎨",
+            title: "Machine Learning",
+            description: "Building predictive models and intelligent systems using Python and scikit-learn.",
+            icon: "🤖",
+        },
+        {
+            title: "Workshops",
+            description: "Conducting workshops on Web Development, AI/ML, and Data Analytics.",
+            icon: "🗣️",
+        },
+        {
+            title: "Internships",
+            description: "Providing real-time project experience and industry exposure for students.",
+            icon: "📝",
         },
     ];
 
