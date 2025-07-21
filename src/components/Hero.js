@@ -41,10 +41,15 @@ const HeroSection = () => {
                     </button>
 
                     <button
-                        onClick={handleOpenResume}
+                        onClick={() => {
+                            const link = document.createElement('a');
+                            link.href = '/resume.pdf';
+                            link.download = 'T_Devi_Lalitha_Resume.pdf';
+                            link.click();
+                        }}
                         className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold rounded-full transition duration-300"
                     >
-                        View CV
+                        Download CV
                     </button>
                 </div>
 

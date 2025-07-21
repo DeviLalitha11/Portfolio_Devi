@@ -5,6 +5,7 @@ const Contact = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
+        phone: "",
         message: "",
     });
 
@@ -13,19 +14,19 @@ const Contact = () => {
     };
 
     const handleSendMessage = (e) => {
-        e.preventDefault(); // Prevent default form submission behavior
+        e.preventDefault();
 
-        const { name, email, message } = formData;
+        const { name, email, phone, message } = formData;
 
-        // Validation: Ensure all fields are filled
-        if (!name.trim() || !email.trim() || !message.trim()) {
+        if (!name.trim() || !email.trim() || !phone.trim() || !message.trim()) {
             alert("Please fill in all fields before sending.");
             return;
         }
 
-        // Construct mailto link
         const subject = encodeURIComponent("Contact Form Submission");
-        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+        const body = encodeURIComponent(
+            `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
+        );
         window.location.href = `mailto:thathadevilalitha@gmail.com?subject=${subject}&body=${body}`;
     };
 
@@ -63,9 +64,8 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    {/* Prevent form submission by default */}
                     <form className="space-y-6" onSubmit={handleSendMessage}>
-                        <div className="relative group">
+                        <div>
                             <input
                                 type="text"
                                 name="name"
@@ -76,7 +76,7 @@ const Contact = () => {
                                 className="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors duration-300"
                             />
                         </div>
-                        <div className="relative group">
+                        <div>
                             <input
                                 type="email"
                                 name="email"
@@ -87,7 +87,18 @@ const Contact = () => {
                                 className="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors duration-300"
                             />
                         </div>
-                        <div className="relative group">
+                        <div>
+                            <input
+                                type="tel"
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                placeholder="Your Phone Number"
+                                required
+                                className="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors duration-300"
+                            />
+                        </div>
+                        <div>
                             <textarea
                                 name="message"
                                 value={formData.message}

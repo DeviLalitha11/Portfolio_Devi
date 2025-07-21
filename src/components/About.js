@@ -53,7 +53,6 @@ const About = () => {
                     I'm a passionate Data Science student with hands-on experience in web and app development, machine learning, and data visualization. I’ve built impactful projects like Speech Emotion Recognition and full-stack applications using the MERN stack. I'm driven by innovation, eager to learn, and always focused on creating user-centric solutions that make a real-world difference.
                 </motion.p>
 
-
                 {/* Skills Row */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {skills.map((skill, index) => (
