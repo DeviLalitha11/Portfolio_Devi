@@ -5,9 +5,9 @@ import { SiLeetcode } from 'react-icons/si';
 import '@fontsource/poppins';
 
 const HeroSection = () => {
-    const handleOpenResume = () => {
-        window.open('/resume.pdf', '_blank');
-    };
+    // const handleOpenResume = () => {
+    //     window.open('/resume.pdf', '_blank');
+    // };
 
     return (
         <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-6 py-20 bg-gradient-to-r from-[#0f172a] via-[#1e285f] to-[#3b0764] text-white">
