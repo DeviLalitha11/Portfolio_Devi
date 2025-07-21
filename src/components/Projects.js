@@ -9,6 +9,13 @@ const projectData = [
         category: "Full Stack Projects",
         projects: [
             {
+                title: "Chirravuru Village Website",
+                image: "/images/chirravuru.jpg",
+                description: "Community website for Chirravuru village featuring admin dashboard, announcements, and user interactions.",
+                tags: ["React", "Node.js", "MongoDB"],
+                link: "https://new-chirravu-sample.vercel.app/",
+            },
+            {
                 title: "International Hackathon Website",
                 image: "/images/inthack.jpg",
                 description: "Full-stack hackathon platform with team management and leaderboard.",
