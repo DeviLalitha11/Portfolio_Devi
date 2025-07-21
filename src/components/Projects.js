@@ -10,7 +10,7 @@ const projectData = [
         projects: [
             {
                 title: "Chirravuru Village Website",
-                image: "/images/chirravuru.jpg",
+                image: "/images/chirravur.jpg",
                 description: "Community website for Chirravuru village featuring admin dashboard, announcements, and user interactions.",
                 tags: ["React", "Node.js", "MongoDB"],
                 link: "https://new-chirravu-sample.vercel.app/",
